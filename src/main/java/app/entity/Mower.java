@@ -27,6 +27,10 @@ public class Mower {
         return orientation;
     }
 
+    public void setOrientation(Orientation orientation) {
+        this.orientation = orientation;
+    }
+
     public Lawn getLawn() {
         return lawn;
     }

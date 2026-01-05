@@ -30,7 +30,7 @@ public class StrategyTest {
         MovementStrategy leftStrategy = new LeftStrategy();
         mower.performMovement(leftStrategy);
         // assert new position is (0,0,W)
-        assertEquals("(0,0,N)", mower.toString());
+        assertEquals("(0,0,W)", mower.toString());
     }
 
     @Test
@@ -40,7 +40,7 @@ public class StrategyTest {
         Mower mower = new Mower(position, N, lawn);
         MovementStrategy rightStrategy = new RightStrategy();
         mower.performMovement(rightStrategy);
-        // assert new position is (0,0,S)
-        assertEquals("(0,0,N)", mower.toString());
+        // assert new position is (0,0,E)
+        assertEquals("(0,0,E)", mower.toString());
     }
 }

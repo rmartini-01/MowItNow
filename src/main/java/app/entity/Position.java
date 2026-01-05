@@ -18,22 +18,39 @@ public class Position {
         return y;
     }
 
-    public Position move(Orientation orientation) {
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    public void move(Orientation orientation) {
         switch (orientation) {
             case N:
-                return new Position(x, y + 1);
+                setY(y+1);
+                break;
             case E:
-                return new Position(x + 1, y);
+                setX(x+1);
+                break;
             case W:
-                return new Position(x - 1, y);
+                setY(x-1);
+                break;
             case S:
-                return new Position(x, y - 1);
-
+                setY(y-1);
+                break;
         }
-        throw new IllegalArgumentException("Invalid position");
     }
 
     public boolean isValidPosition(int maxX, int maxY) {
         return (x >= 0 && x <= maxX) && (y >= 0 && y <= maxY);
+    }
+
+    @Override
+    public String toString() {
+        return "(" + x +
+                "," + y +
+                ')';
     }
 }
