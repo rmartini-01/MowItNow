@@ -29,16 +29,16 @@ public class Position {
     public void move(Orientation orientation) {
         switch (orientation) {
             case N:
-                setY(y+1);
+                setY(y + 1);
                 break;
             case E:
-                setX(x+1);
+                setX(x + 1);
                 break;
             case W:
-                setY(x-1);
+                setY(x - 1);
                 break;
             case S:
-                setY(y-1);
+                setY(y - 1);
                 break;
         }
     }
