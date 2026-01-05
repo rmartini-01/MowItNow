@@ -23,11 +23,23 @@ public class Mower {
         this.position = position;
     }
 
+    public Orientation getOrientation() {
+        return orientation;
+    }
+
     public Lawn getLawn() {
         return lawn;
     }
 
     public void performMovement(MovementStrategy strategy) {
         strategy.move(this);
+    }
+
+    @Override
+    public String toString() {
+        return "(" + getPosition().getX() +
+                "," + getPosition().getY() +
+                "," + getOrientation() +
+                ')';
     }
 }
