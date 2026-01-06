@@ -1,10 +1,10 @@
 package app.entity;
 
-public enum Orientation {
+public enum Direction {
     N, E, W, S;
 
 
-    public Orientation rotateLeft() {
+    public Direction rotateLeft() {
         switch (this) {
             case N:
                 return W;
@@ -18,7 +18,7 @@ public enum Orientation {
         throw new IllegalArgumentException("Invalid Orientation");
     }
 
-    public Orientation rotateRight() {
+    public Direction rotateRight() {
         switch (this) {
             case N:
                 return E;

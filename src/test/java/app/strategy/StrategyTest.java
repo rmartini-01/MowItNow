@@ -5,7 +5,7 @@ import app.entity.Mower;
 import app.entity.Position;
 import org.junit.jupiter.api.Test;
 
-import static app.entity.Orientation.N;
+import static app.entity.Direction.N;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class StrategyTest {

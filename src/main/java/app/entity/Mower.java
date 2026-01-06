@@ -7,12 +7,12 @@ public class Mower {
 
     private Position position;
     private final Lawn lawn;
-    private Orientation orientation;
+    private Direction direction;
 
-    public Mower(Position position, Orientation orientation, Lawn lawn) {
+    public Mower(Position position, Direction direction, Lawn lawn) {
         this.position = position;
         this.lawn = lawn;
-        this.orientation = orientation;
+        this.direction = direction;
     }
 
     public Position getPosition() {
@@ -23,12 +23,12 @@ public class Mower {
         this.position = position;
     }
 
-    public Orientation getOrientation() {
-        return orientation;
+    public Direction getDirection() {
+        return direction;
     }
 
-    public void setOrientation(Orientation orientation) {
-        this.orientation = orientation;
+    public void setOrientation(Direction direction) {
+        this.direction = direction;
     }
 
     public Lawn getLawn() {
@@ -43,7 +43,7 @@ public class Mower {
     public String toString() {
         return "(" + getPosition().getX() +
                 "," + getPosition().getY() +
-                "," + getOrientation() +
+                "," + getDirection() +
                 ')';
     }
 }

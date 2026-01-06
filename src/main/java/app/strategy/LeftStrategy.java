@@ -5,6 +5,6 @@ import app.entity.Mower;
 public class LeftStrategy implements MovementStrategy {
     @Override
     public void move(Mower mower) {
-        mower.setOrientation(mower.getOrientation().rotateLeft());
+        mower.setOrientation(mower.getDirection().rotateLeft());
     }
 }

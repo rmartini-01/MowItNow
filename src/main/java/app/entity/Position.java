@@ -26,8 +26,8 @@ public class Position {
         this.y = y;
     }
 
-    public void move(Orientation orientation) {
-        switch (orientation) {
+    public void move(Direction direction) {
+        switch (direction) {
             case N:
                 setY(y + 1);
                 break;
@@ -35,7 +35,7 @@ public class Position {
                 setX(x + 1);
                 break;
             case W:
-                setY(x - 1);
+                setX(x - 1);
                 break;
             case S:
                 setY(y - 1);

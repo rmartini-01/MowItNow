@@ -9,28 +9,28 @@ class PositionTest {
     @Test
     void moveNorth() {
         Position position = new Position(2, 1);
-        position.move(Orientation.N);
+        position.move(Direction.N);
         assertEquals("(2,2)", position.toString());
     }
 
     @Test
     void moveEast() {
         Position position = new Position(2, 1);
-        position.move(Orientation.E);
+        position.move(Direction.E);
         assertEquals("(3,1)", position.toString());
     }
 
     @Test
     void moveWest() {
         Position position = new Position(2, 1);
-        position.move(Orientation.N);
+        position.move(Direction.W);
         assertEquals("(1,1)", position.toString());
     }
 
     @Test
     void moveSouth() {
         Position position = new Position(2, 1);
-        position.move(Orientation.S);
+        position.move(Direction.S);
         assertEquals("(2,0)", position.toString());
     }
 
