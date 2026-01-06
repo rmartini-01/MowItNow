@@ -10,6 +10,7 @@ public class ForwardStrategy implements MovementStrategy {
         }
         mower.getPosition().move(mower.getDirection());
 
-        if (mower.getPosition().isValidPosition(mower.getLawn().getMaxX(), mower.getLawn().getMaxY())) mower.setPosition(mower.getPosition());
+        if (mower.getPosition().isValidPosition(mower.getLawn().getMaxX(), mower.getLawn().getMaxY()))
+            mower.setPosition(mower.getPosition());
     }
 }
