@@ -27,7 +27,7 @@ public class Mower {
         return direction;
     }
 
-    public void setOrientation(Direction direction) {
+    public void setDirection(Direction direction) {
         this.direction = direction;
     }
 
